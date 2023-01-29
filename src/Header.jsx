@@ -40,7 +40,7 @@ export function Header() {
             <div class="ml-8 flex items-center">
               <div class="flex items-center divide-x divide-gray-100 border-x border-gray-100">
                 <span>
-                  <a href="/profile" class="block border-b-4 border-transparent p-6 hover:border-blue-400">
+                  <a href="/login" class="block border-b-4 border-transparent p-6 hover:border-blue-400">
                     <svg
                       class="h-4 w-4"
                       xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ export function Header() {
                       />
                     </svg>
 
-                    <span class="sr-only"> Profile </span>
+                    <span class="sr-only"> Login </span>
                   </a>
                 </span>
               </div>

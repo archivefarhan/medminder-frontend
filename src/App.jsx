@@ -7,7 +7,6 @@ import { Home } from "./Home";
 import { Login } from "./Login";
 import { Medication } from "./Medication";
 import { MedicationNew } from "./MedicationNew";
-import { Profile } from "./Profile";
 import { Schedule } from "./Schedule";
 import { Signup } from "./Signup";
 
@@ -22,7 +21,6 @@ function App() {
           <Route path="/medication" element={<Medication />} />
           <Route path="/medication/new" element={<MedicationNew />} />
           <Route path="/schedule" element={<Schedule />} />
-          <Route path="/profile" element={<Profile />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
         </Routes>
