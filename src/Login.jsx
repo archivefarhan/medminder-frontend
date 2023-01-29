@@ -45,7 +45,7 @@ export function Login() {
               <form class="space-y-4 md:space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label for="email" class="block mb-2 text-sm font-medium text-gray-900 ">
-                    Your email
+                    Email
                   </label>
                   <input
                     type="email"
