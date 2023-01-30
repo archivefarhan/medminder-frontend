@@ -7,6 +7,7 @@ import { Home } from "./Home";
 import { Login } from "./Login";
 import { Medication } from "./Medication";
 import { MedicationNew } from "./MedicationNew";
+import { MedicationShow } from "./MedicationShow";
 import { ReminderNew } from "./ReminderNew";
 import { Schedule } from "./Schedule";
 import { Signup } from "./Signup";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/reminder/new" element={<ReminderNew />} />
+          <Route path="/medication/1" element={<MedicationShow />} />
         </Routes>
       </BrowserRouter>
       <Footer />

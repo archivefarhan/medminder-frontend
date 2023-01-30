@@ -31,12 +31,15 @@ export function Medication() {
               <p class="mb-5 font-light text-gray-500 ">Lorem ipsum dolor sit amet.</p>
               <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-4">
-                  <a href="/reminder/new" className="font-medium ">
+                  <a
+                    href="/reminder/new"
+                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                  >
                     Set Reminder
                   </a>
                 </div>
                 <a
-                  href="#"
+                  href="/medication/1"
                   class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                 >
                   More Info
