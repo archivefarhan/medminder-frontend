@@ -2,16 +2,16 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 export function Medication() {
-  // const [medication, setMedication] = useState([]);
+  const [medication, setMedication] = useState([]);
 
-  // const handleIndexMedicine = () => {
-  //   axios.get(`http://localhost:3000/medication.json`).then((response) => (
-  //     console.log(response.data);
-  //     setMedication(response.data);
-  //   ))
-  // };
+  const handleIndexMedicine = () => {
+    axios.get(`http://localhost:3000/medications.json`).then((response) => {
+      console.log(response.data);
+      setMedication(response.data);
+    });
+  };
 
-  // useEffect(handleIndexMedicine, []);
+  useEffect(handleIndexMedicine, []);
 
   return (
     <div className="w-screen h-auto min-h-screen">
@@ -23,32 +23,35 @@ export function Medication() {
           <div className="rounded-xl bg-blue-400 text-white text-center mx-auto w-36 mb-10">
             <a href="/medication/new">Add Medication</a>
           </div>
-          <div class="grid gap-8 lg:grid-cols-2">
-            <div class="p-6 bg-white rounded-lg border border-gray-200 shadow-md ">
-              <h2 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900 ">
-                <p>Medicine Name</p>
-              </h2>
-              <p class="mb-5 font-light text-gray-500 ">Lorem ipsum dolor sit amet.</p>
-              <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-4">
+          {medication.map((med) => (
+            <div class="grid gap-8 lg:grid-cols-2">
+              <div class="p-6 bg-white rounded-lg border border-gray-200 shadow-md ">
+                <h2 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900 ">
+                  <p>{med.name}</p>
+                </h2>
+                <p class="mb-5 font-light text-gray-500 ">Lorem ipsum dolor sit amet.</p>
+                <div class="flex justify-between items-center">
+                  <div class="flex items-center space-x-4">
+                    <a
+                      href="/reminder/new"
+                      className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                    >
+                      Set Reminder
+                    </a>
+                  </div>
                   <a
-                    href="/reminder/new"
-                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                    href="/medication/1"
+                    class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
                   >
-                    Set Reminder
+                    More Info
                   </a>
                 </div>
-                <a
-                  href="/medication/1"
-                  class="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline"
-                >
-                  More Info
-                </a>
               </div>
             </div>
-          </div>
+          ))}
         </div>
       </section>
+      <div></div>
     </div>
   );
 }
