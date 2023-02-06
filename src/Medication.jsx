@@ -17,19 +17,19 @@ export function Medication() {
     <div className="w-screen h-auto min-h-screen">
       <section class="bg-white">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-8">
+          <div class="mx-auto max-w-screen-sm text-center lg:mb-16 mb-4">
             <h2 class="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-gray-900 ">Medications</h2>
           </div>
           <div className="rounded-xl bg-blue-400 text-white text-center mx-auto w-36 mb-10">
             <a href="/medication/new">Add Medication</a>
           </div>
           {medication.map((med) => (
-            <div class="grid gap-8 lg:grid-cols-2">
+            <div class="grid gap-8 mt-1 sm:grid-cols-2">
               <div class="p-6 bg-white rounded-lg border border-gray-200 shadow-md ">
                 <h2 class="mb-2 mt-2 text-2xl font-bold tracking-tight text-gray-900 ">
                   <p>{med.name}</p>
                 </h2>
-                <p class="mb-5 font-light text-gray-500 ">Lorem ipsum dolor sit amet.</p>
+                <p class="mb-5 font-light text-gray-500 ">{med.directions}</p>
                 <div class="flex justify-between items-center">
                   <div class="flex items-center space-x-4">
                     <a
