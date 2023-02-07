@@ -8,7 +8,7 @@ export function About() {
               <div class="relative h-64 sm:h-80 lg:h-full">
                 <img
                   alt="Medicines"
-                  src="src/assets/AdobeStock_107028855.jpeg"
+                  src="src/assets/whitepills.jpeg"
                   class="absolute inset-0 h-full w-full object-cover"
                 />
               </div>

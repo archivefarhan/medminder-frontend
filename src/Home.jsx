@@ -7,7 +7,7 @@ export function Home() {
             <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:order-last lg:h-full">
               <img
                 alt="Medications"
-                src="src/assets/AdobeStock_78077186.jpeg"
+                src="src/assets/bluepill.jpeg"
                 class="absolute inset-0 h-full w-full object-cover"
               />
             </div>
