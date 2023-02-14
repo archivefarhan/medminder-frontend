@@ -19,6 +19,7 @@ export function MedicationNew() {
                   required=""
                 />
               </div>
+
               <div class="sm:col-span-2">
                 <label for="name" class="block mb-2 text-sm font-medium text-gray-900">
                   Medication Type
@@ -68,6 +69,20 @@ export function MedicationNew() {
                   <option value="mL">mL</option>
                   <option value="%">%</option>
                 </select>
+              </div>
+
+              <div class="sm:col-span-2">
+                <label for="name" class="block mb-2 text-sm font-medium text-gray-900">
+                  Medication Frequency Per Day
+                </label>
+                <input
+                  type="number"
+                  name="item-weight"
+                  id="item-weight"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5  "
+                  placeholder="0"
+                  required=""
+                />
               </div>
 
               <div class="sm:col-span-2">
